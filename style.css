@@ -1,0 +1,78 @@
+body {
+    background-image: linear-gradient(to top, hsl(13, 43%, 68%) 0%, #fbc2eb 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-cotainer {
+    width: 800px;
+    padding: 50px 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    background: hsl(244, 92%, 85%);
+    background: radial-gradient(circle farthest-corner at center center, #B8E1FC 0%, #231421 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}   
+
+.text-field {
+    width: calc(100% - 30px);
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid hsl(0, 43%, 68%);
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+    background: #ffffff33;
+    text-align: center;
+    color:black;
+    cursor: pointer;
+}
+
+.result-text{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: hsl(64, 24%, 55%);
+
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 5rem;
+
+}   
+
+.btn {
+    background: linear-gradient(45deg, hsl(123, 43%, 68%), hsl(0, 88%, 87%));
+            border: none;
+            width: 150px;
+            height: 8vh;
+            color: hwb(0 100% 0%);
+            padding: 10px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, hsl(241, 88%, 87%), hwb(31 55% 18%));
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Handler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card-cotainer">
+        <h1 class="heading">Text Handler</h1>
+
+        <div>
+            <textarea class="text-field" id="input-text"  rows="5" placeholder="Enter your text here..."></textarea>
+        </div>
+
+        <div class="result-text" id="resultText"> result</div>
+
+        <div class="btn-container">
+            <button class="btn" onclick="ActionResult('UpperCase')">Uppercase</button>
+
+            <button class="btn" onclick="ActionResult('LowerCase')">Lowercase</button>
+
+            <button class="btn" onclick="ActionResult('CharCount')">Count Characters</button>
+
+            <button class="btn" onclick="ActionResult('WordCount')">Count Words</button>
+        </div>
+    </div>
+
+
+    <script>
+        function ActionResult(action) {
+            const inputText = document.getElementById("input-text")
+            const resultText = document.getElementById("resultText")
+
+            if (action == 'UpperCase') {
+                resultText.innerText = inputText.value.toUpperCase();
+            }
+            else if (action == 'LowerCase') {
+                resultText.innerText = inputText.value.toLowerCase();
+            }
+            else if (action == 'CharCount') {
+                resultText.innerText = (`Total Characters : ${inputText.value.length}`);
+            }
+            else { 
+                resultText.innerText = (`Total Words : ${inputText.value.split(" ").length}`);
+
+            }
+        }
+
+    </script>
+
+</body>
+
